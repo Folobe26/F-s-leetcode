@@ -1,5 +1,13 @@
 # Reactive Objc (RAC) 复习
 
+本文主要根据
+
+[RAC官方文档](https://github.com/ReactiveCocoa/ReactiveObjC)
+
+[Draveness的RAC文档](https://draveness.me/tags/rac)
+
+整理而成
+
 ## Intro
 
 - RAC 用 Signal 代替 Mutable 的变量来表达过去和未来的值
@@ -938,7 +946,6 @@ RACChannelTo(view, property) = RACChannelTo(model, property);
 [[RACKVOChannel alloc] initWithTarget:self keyPath:@"integerProperty" nilValue:@42][@"followingTerminal"];
 ```
 
-![image-20200801225235513](/Users/liyifan/Library/Application Support/typora-user-images/image-20200801225235513.png)
 
 使用RACKVOChannel的好处是没有暴露leadingTerminal
 
